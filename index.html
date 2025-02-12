@@ -94,86 +94,98 @@
 
     <div class="max-w-6xl w-full mx-auto p-4 md:py-24 py-12">
 
-        <div class="grid  md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12">
-
-            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16">
-                <h2 class="text-center text-5xl font-semibold text-[#f7b643]">900</h2>
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12 stagger-boxes">
+            <!-- Box 1 -->
+            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16 box-item">
+                <h2 id="counter1" class="text-center text-5xl font-semibold text-[#f7b643]">0</h2>
                 <p class="text-center text-gray-800 font-medium pt-3">Objednávok</p>
                 <img src="./Docs/Assets/coins.webp" class="h-28 absolute -bottom-12 left-1/2 -translate-x-1/2" alt="">
             </div>
-            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16">
-                <h2 class="text-center text-5xl font-semibold text-[#f7b643]">800</h2>
+
+            <!-- Box 2 -->
+            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16 box-item">
+                <h2 id="counter2" class="text-center text-5xl font-semibold text-[#f7b643]">0</h2>
                 <p class="text-center text-gray-800 font-medium pt-3">Zákazníkov</p>
                 <img src="./Docs/Assets/kingEmoji.webp" class="h-28 absolute -bottom-12 left-1/2 -translate-x-1/2"
                     alt="">
             </div>
-            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16">
-                <h2 class="text-center text-5xl font-semibold text-[#f7b643]">5000</h2>
+
+            <!-- Box 3 -->
+            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16 box-item">
+                <h2 id="counter3" class="text-center text-5xl font-semibold text-[#f7b643]">0</h2>
                 <p class="text-center text-gray-800 font-medium pt-3">Predaných produktov</p>
                 <img src="./Docs/Assets/silverCoins.webp" class="h-28 absolute -bottom-12 left-1/2 -translate-x-1/2"
                     alt="">
             </div>
-            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16">
-                <h2 class="text-center text-5xl font-semibold text-[#f7b643]">+ ∞ %</h2>
+
+            <!-- Box 4 -->
+            <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16 box-item">
+                <h2 id="counter4" class="text-center text-5xl font-semibold text-[#f7b643]">+ ∞ %</h2>
                 <p class="text-center text-gray-800 font-medium pt-3">Zisk</p>
                 <img src="./Docs/Assets/tradeEmoji.webp" class="h-28 absolute -bottom-12 left-1/2 -translate-x-1/2"
                     alt="">
             </div>
-
-
         </div>
 
-        <div class="flex items-center justify-center md:gap-20 gap-14 md:pt-40 md:flex-row flex-col pt-28">
-            <div class="md:max-w-[50%] w-full md:h-[30rem]">
+
+        <div
+            class="flex items-center justify-center md:gap-20 gap-14 md:pt-40 md:flex-row flex-col pt-28 fade-in-section">
+            <!-- Image Section -->
+            <div class="md:max-w-[50%] w-full md:h-[30rem] fade-in-image">
                 <img src="https://img.freepik.com/premium-photo/bottom-view-skyscrapers-manhattan-new-york-usa_71337-7.jpg?w=900"
                     class="rounded-lg w-full yellowShadow object-cover h-full" alt="">
             </div>
-            <div class="md:max-w-[50%] w-full ">
-                <h2 class="md:text-6xl text-5xl font-semibold text-[#f7b643]">Kráľ obchodu</h2>
-                <h2 class="md:text-5xl text-4xl pb-3 font-semibold text-[#000] rotate-180">
+
+            <!-- Text Section -->
+            <div class="md:max-w-[50%] w-full fade-in-text">
+                <h2 class="md:text-6xl text-5xl font-semibold text-[#f7b643] fade-in-heading">Kráľ obchodu</h2>
+                <h2 class="md:text-5xl text-4xl pb-3 font-semibold text-[#000] rotate-180 fade-in-heading">
                     Deal King
                 </h2>
-                <p class="text-gray-700 pt-7"> Volám sa Philip Petráš a som obchodník. Vždy hľadám nové príležitosti,
+                <p class="text-gray-700 pt-7 fade-in-paragraph">Volám sa Philip Petráš a som obchodník. Vždy hľadám nové
+                    príležitosti,
                     budujem vzťahy a vyjednávam tie najlepšie podmienky. Obchod je pre mňa nielen práca, ale aj vášeň, v
                     ktorej sa neustále rozvíjam a posúvam vpred.
-
                 </p>
-                <p class="text-gray-600 md:pt-7 pt-5 md:text-sm text-xs"> Obchodovaniu a investovaniu sa venujem od roku
+                <p class="text-gray-600 md:pt-7 pt-5 md:text-sm text-xs fade-in-paragraph">Obchodovaniu a investovaniu
+                    sa venujem od roku
                     2022, pričom som v týchto oblastiach objavil obrovský potenciál. <br><br>Som presvedčený, že správne
-                    nastavené obchodné stratégie a dobre zvolené investície sú kľúčom k rastu a dlhodobému úspechu. </p>
+                    nastavené obchodné stratégie a dobre zvolené investície sú kľúčom k rastu a dlhodobému úspechu.</p>
             </div>
         </div>
+
+
 
     </div>
 
     <!-- timeline -->
 
     <section class="design-section md:min-h-screen">
-        <div class="timeline md:w-[80%]">
+        <div class="timeline md:w-[80%] mx-auto">
 
-            <div class="timeline-empty">
-            </div>
+            <div class="timeline-empty"></div>
             <div class="timeline-middle">
-                <div class="timeline-circle"></div>
+                <div class="timeline-circle fade-in"></div>
             </div>
-            <div class="timeline-component timeline-content md:mb-60 mb-20">
-                <h3>01/01/2024
-                </h3>
-                <p class="text-3xl font-semibold text-[#f7b643] pt-6"> Začiatok predaja</p>
+            <div class="timeline-component timeline-content md:mb-60 mb-20 fade-in">
+                <h3>01/01/2024</h3>
+                <p class="text-3xl font-semibold text-[#f7b643] pt-6">Začiatok predaja</p>
             </div>
-            <div class="timeline-component md:text-right timeline-content md:mb-20">
-                <h3 class="">07/01/2024</h3>
-                <p class="md:text-8xl text-6xl pb-2 font-semibold text-[#f7b643] pt-2"> <span class="text-[#202020]">000</span>1</p>
-                <p class="text-sm text-gray-200">Prvá objednávka. Tento moment otvoril dvere k novým obchodným príležitostiam.</p>
+
+            <div class="timeline-component md:text-right timeline-content md:mb-20 fade-in">
+                <h3>07/01/2024</h3>
+                <p class="md:text-8xl text-6xl pb-2 font-semibold text-[#f7b643] pt-2">
+                    <span class="text-[#202020]">000</span>1
+                </p>
+                <p class="text-sm text-gray-200">Prvá objednávka. Tento moment otvoril dvere k novým obchodným
+                    príležitostiam.</p>
             </div>
+
             <div class="timeline-middle">
-                <div class="timeline-circle"></div>
+                <div class="timeline-circle fade-in"></div>
             </div>
-            <div class="timeline-empty">
-            </div>
+            <div class="timeline-empty"></div>
 
-
-        </div>
         </div>
     </section>
 
@@ -222,6 +234,8 @@
 
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
 </body>
 
