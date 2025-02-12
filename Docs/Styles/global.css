@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat", serif;
+
+  scroll-behavior: smooth;
+}
+
+:root {
+  --black-color: #1e1c1c;
+  --white-color: #f7f7f7;
+}
+
+img, button, iframe, a {
+  user-select: none;
+}
+
+.slidein {
+  animation: slideAnimation 1s ease var(--slidein-delay, 0) forwards;
+}
+
+@keyframes slideAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navUnderLine {
+  position: relative;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.navUnderLine::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #f7b643;
+  transition: 200ms all;
+}
+.navUnderLine:hover::before {
+  width: 100%;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.myShadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
