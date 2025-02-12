@@ -8,10 +8,22 @@ requestAnimationFrame(raf);
 
 const navToggle = document.getElementById('navToggle');
 const resNav = document.getElementById('resNav');
+const navLinks = document.querySelectorAll('.navToggle a'); // Selecting all the links inside navToggle
 
+// Toggle nav bar open/close when checkbox changes
 navToggle.addEventListener('change', () => {
     resNav.style.height = navToggle.checked ? "100%" : "0%";
 });
+
+// Close nav bar when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navToggle.checked = false;         // Uncheck the checkbox
+        resNav.style.height = "0%";        // Collapse the navigation
+    });
+});
+
+
 
 
 gsap.registerPlugin(ScrollTrigger);

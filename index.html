@@ -19,16 +19,19 @@
     <!-- navbar -->
 
     <div style="height: 0;" id="resNav"
-        class="fixed transition-all w-full duration-500 overflow-hidden h-screen top-20 left-0 bg-zinc-900 z-40">
+        class="fixed transition-all w-full duration-500 overflow-hidden h-screen top-20 left-0 bg-black z-40">
         <div class="">
             <div class="mt-8 text-nowrap px-5 w-full flex flex-col gap-10 justify-between h-[80vh] overflow-auto">
                 <ul class="  flex-col gap-8 flex ">
 
-                    <li> <a href="./index.html" class="text-white font-medium transition-all duration-500">
+                    <li class="navToggle"> <a href="#mne" class="text-white  font-medium transition-all duration-500">
                             O mne</a>
                     </li>
-                    <li> <a href="./AboutUs.html" class="text-white font-medium transition-all duration-500">
-                            Zákazníci</a>
+                    <li class="navToggle"> <a href="#História" class="text-white  font-medium transition-all duration-500">
+                        História</a>
+                    </li>
+                    <li class="navToggle"> <a href="#Kontakt" class="text-white  font-medium transition-all duration-500">
+                        Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -36,26 +39,28 @@
         </div>
     </div>
 
-    <div class="fixed top-0 left-0 z-40 w-full bg-zinc-900">
+    <div class="fixed top-0 left-0 z-40 w-full bg-black">
         <div class=" w-full">
             <div class="flex items-center justify-between max-w-7xl w-full mx-auto p-5">
                 <a href="./index.html">
-                    <!-- <img src="./Docs/Assets/logo.png" class="md:h-16 h-12" alt=""> -->
-                    <p class="text-white md:py-4 py-2">logo</p>
+                    <img src="./Docs/Assets/logo.jpg" class="md:h-16 h-12" alt="">
                 </a>
                 <div class="flex items-center gap-3">
                     <ul class="hidden items-center justify-center gap-8 lg:flex ">
-                        <li> <a href="./index.html"
+                        <li> <a href="#mne"
                                 class="hover:text-[#f7b643] slidein [--slidein-delay:200ms] opacity-0 text-gray-300 font-medium navUnderLine cursor-pointer transition-all duration-500">
                                 O mne</a>
                         </li>
-                        <li> <a href="./AboutUs.html"
+                        <li> <a href="#História"
                                 class="hover:text-[#f7b643] slidein [--slidein-delay:200ms] opacity-0 text-gray-300 font-medium navUnderLine cursor-pointer transition-all duration-500">
-                                Zákazníci</a></li>
+                                História</a></li>
+                        <li> <a href="#Kontakt"
+                                class="hover:text-[#f7b643] slidein [--slidein-delay:200ms] opacity-0 text-gray-300 font-medium navUnderLine cursor-pointer transition-all duration-500">
+                                Kontakt</a></li>
                     </ul>
                     <label for="navToggle" id="openNav" class="md:hidden">
                         <div class="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
-                            <input id="navToggle" class="hidden peer" type="checkbox" />
+                            <input id="navToggle" class="hidden peer navToggle" type="checkbox" />
                             <div
                                 class="w-[50%] h-[2px] bg-white rounded-sm transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:rotate-[-45deg]">
                             </div>
@@ -92,7 +97,7 @@
     </div>
 
 
-    <div class="max-w-6xl w-full mx-auto p-4 md:py-24 py-12">
+    <div id="mne" class="max-w-6xl w-full mx-auto p-4 md:py-24 py-12">
 
         <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-5 gap-y-12 stagger-boxes">
             <!-- Box 1 -->
@@ -120,7 +125,7 @@
 
             <!-- Box 4 -->
             <div class="w-full border border-[#f6bf5d] relative p-5 rounded-lg py-16 box-item">
-                <h2 id="counter4" class="text-center text-5xl font-semibold text-[#f7b643]">+ ∞ %</h2>
+                <h2 id="counter4" class="text-center text-5xl font-semibold text-[#f7b643]">+ <span class="md:text-7xl" style="font-weight: 800;">∞</span> %</h2>
                 <p class="text-center text-gray-800 font-medium pt-3">Zisk</p>
                 <img src="./Docs/Assets/tradeEmoji.webp" class="h-28 absolute -bottom-12 left-1/2 -translate-x-1/2"
                     alt="">
@@ -160,7 +165,7 @@
 
     <!-- timeline -->
 
-    <section class="design-section md:min-h-screen">
+    <section id="História" class="design-section md:min-h-screen">
         <div class="timeline md:w-[80%] mx-auto">
 
             <div class="timeline-empty"></div>
@@ -194,15 +199,15 @@
 
     <footer class="bg-black text-gray-300 md:pt-10 pt-6">
         <div class="max-w-7xl w-full mx-auto p-6">
-            <h1>logo</h1>
+            <img src="./Docs/Assets/footerLogo.jpg" class="h-10" alt="">
 
             <div class="border-t md:py-10  py-8 flex justify-between gap-5 md:flex-row border-zinc-900 mt-7 flex-col">
 
                 <ul class="flex flex-col gap-6">
-                    <li><a href="" class="block transition-all duration-500 hover:text-white text-gray-400 ">O mne</a>
+                    <li><a href="#mne" class="block transition-all duration-500 hover:text-white text-gray-400 ">O mne</a>
                     </li>
-                    <li><a href=""
-                            class="block transition-all duration-500 hover:text-white text-gray-400 ">Zákazníci</a></li>
+                    <li><a href="#História"
+                            class="block transition-all duration-500 hover:text-white text-gray-400 ">História</a></li>
                 </ul>
 
                 <div class="flex items-center gap-6">
